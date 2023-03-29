@@ -14,5 +14,5 @@ public class ParametriRicorrenti {
     static final String schema = "620826";
     public static final String connectionURL = "jdbc:mysql://localhost:3306/620826";
     public static final String user = "root";
-    public static final String pass = "Cic@da3310";
+    public static final String pass = "root";
 }
