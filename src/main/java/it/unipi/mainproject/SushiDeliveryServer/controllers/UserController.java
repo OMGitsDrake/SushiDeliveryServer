@@ -53,7 +53,7 @@ public class UserController {
                 throw new ParameterException(1, "Nome utente non disponibile!");
             
             PreparedStatement stmt;
-            stmt = c.prepareStatement("INSERT INTO utente (username, `password`, email) VALUES (?, ?, ?, ?)");
+            stmt = c.prepareStatement("INSERT INTO utente (username, `password`, email, bdate) VALUES (?, ?, ?, ?)");
             stmt.setString(1, req.get("user").getAsString());
             stmt.setString(2, req.get("psw").getAsString());
             stmt.setString(3, req.get("mail").getAsString());
